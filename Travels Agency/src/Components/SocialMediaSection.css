@@ -1,0 +1,64 @@
+.social-section {
+    background-color: #fdfdfb;
+    /* Light cream background */
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.social-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-text {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Mobile par links ko wrap karega */
+    gap: 10px 20px;
+    /* Vertical aur Horizontal gap */
+}
+
+.social-links a {
+    color: #bfa85a;
+    /* Golden color */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #333;
+    /* Hover par dark color */
+}
+
+/* Links ke beech mein bullet point add karne ke liye */
+.social-links a:not(:first-child)::before {
+    content: '•';
+    color: #d1c8b3;
+    margin-right: 20px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 576px) {
+    .social-links {
+        flex-direction: column;
+        /* Chhoti screen par links ko ek ke neeche ek laayega */
+        gap: 15px;
+    }
+
+    /* Mobile par bullet points hata dein */
+    .social-links a:not(:first-child)::before {
+        display: none;
+    }
+}

@@ -1,0 +1,249 @@
+.packages-section {
+    background-color: #fdfdfb;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.packages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.packages-section .sub-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #bfa85a;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.packages-section .sub-heading::before,
+.packages-section .sub-heading::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #bfa85a;
+}
+
+.packages-section .main-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.packages-section .main-heading span {
+    color: #bfa85a;
+}
+
+.section-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 55px;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    display: flex;
+    /* Added for flex layout */
+    flex-direction: column;
+    /* Added for flex layout */
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.package-image-wrapper {
+    position: relative;
+    height: 220px;
+}
+
+.package-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover .package-image {
+    transform: scale(1.05);
+}
+
+.package-type {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #f6c700;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.package-rating {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Darker background for better contrast */
+    color: white;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.package-rating svg {
+    color: #f6c700;
+    width: 14px;
+    height: 14px;
+    fill: #f6c700;
+}
+
+.package-content {
+    padding: 20px;
+    display: flex;
+    /* Added for flex layout */
+    flex-direction: column;
+    /* Added for flex layout */
+    flex-grow: 1;
+    /* Added to make content area fill space */
+}
+
+.package-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.package-location svg {
+    width: 16px;
+    height: 16px;
+}
+
+.package-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+.package-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.package-days {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+.package-days svg {
+    width: 16px;
+    height: 16px;
+}
+
+.package-price {
+    color: #bfa85a;
+    font-weight: 700;
+    font-size: 1.1rem;
+    /* Slightly larger price */
+}
+
+.package-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+    /* Pushes tags to the bottom before the button */
+    padding-bottom: 20px;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #777;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* --- Naya Button ka Style --- */
+/* --- Naya Attractive Button ka Style --- */
+.btn-book {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 0;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    /* --- Gradient Color --- */
+    background: linear-gradient(45deg, #004d4d, #0c2d57);
+    /* Dark Teal to Dark Blue Gradient */
+
+    /* --- Shadow --- */
+    box-shadow: 0 4px 15px rgba(0, 47, 51, 0.2);
+
+    /* --- Animation --- */
+    transition: all 0.3s ease;
+}
+
+.btn-book:hover {
+    transform: translateY(-3px);
+    /* Button thoda upar uthega */
+    box-shadow: 0 7px 20px rgba(0, 47, 51, 0.3);
+    /* Shadow thodi gehri hogi */
+    background: linear-gradient(45deg, #006a6a, #1a4a8a);
+    /* Hover par thoda bright gradient */
+}
+
+/* --- Responsive styles --- */
+@media (max-width: 768px) {
+    .packages-section .main-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+}

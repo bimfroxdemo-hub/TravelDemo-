@@ -1,0 +1,196 @@
+.services-section {
+    background-color: #fffcf5;
+    /* Light cream background */
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Reusing heading styles */
+.services-section .sub-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #bfa85a;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.services-section .sub-heading::before,
+.services-section .sub-heading::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #bfa85a;
+}
+
+.services-section .main-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services-section .main-heading span {
+    color: #bfa85a;
+}
+
+.services-section .section-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fffcf5;
+}
+
+.service-icon {
+    background-color: #f6c700;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon svg {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+    /* To center the block of text */
+}
+
+.service-card li {
+    color: #555;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.service-card li::before {
+    content: '•';
+    color: #f6c700;
+    /* Yellow bullet point */
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+/* --- Enquire Button Styling --- */
+.cta-button {
+    display: inline-block;
+    /* Taaki padding aur margin kaam kare */
+    margin-top: 60px;
+    /* Upar ke cards se space */
+
+    background-color: #f6c700;
+    /* Yellow background */
+    color: #333;
+    /* Dark text color */
+
+    padding: 14px 35px;
+    /* Button ka size */
+    border-radius: 50px;
+    /* Poora gol corner */
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffdb4d;
+    /* Hover par thoda bright yellow */
+}
+
+/* --- Button Ka Responsive Code --- */
+@media (max-width: 768px) {
+    .cta-button {
+        margin-top: 40px;
+        /* Mobile par upar se space kam kar di */
+        padding: 12px 30px;
+        /* Button ka size thoda chhota kar diya */
+        font-size: 1rem;
+        /* Text ka size thoda chhota kar diya */
+    }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .services-section .main-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        padding: 60px 15px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
+    }
+
+    .service-card {
+        padding: 30px 25px;
+    }
+}

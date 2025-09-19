@@ -1,0 +1,186 @@
+.site-footer {
+    background-color: #0c2d57;
+    color: #e0e0e0;
+    padding: 80px 20px 40px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SectionHeader ko dark background ke liye override karna */
+.site-footer .main-heading,
+.site-footer .section-description {
+    color: white;
+}
+
+.site-footer .sub-heading {
+    color: #f6c700;
+}
+
+.site-footer .sub-heading::before,
+.site-footer .sub-heading::after {
+    background-color: #f6c700;
+}
+
+/* WhatsApp Button */
+.footer-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    transition: transform 0.3s ease;
+}
+
+.footer-cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Grid */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contact-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.contact-item p {
+    color: #c0c8d4;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #f6c700;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon :hover {
+    transform: scale(1.05);
+}
+
+/* Divider */
+.footer-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 0 auto 40px auto;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-about h2 {
+    color: #f6c700;
+    font-size: 1.8rem;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    text-align: left;
+}
+
+.footer-about p {
+    margin: 0;
+    color: #c0c8d4;
+    text-align: left;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* --- Yahan Naye Hover Colors Add Kiye Gaye Hain --- */
+.footer-social a.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.footer-social a.facebook:hover {
+    background-color: #1877F2;
+}
+
+.footer-social a.youtube:hover {
+    background-color: #FF0000;
+}
+
+.footer-legal {
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.footer-legal .certifications {
+    font-size: 0.8rem;
+    color: #a0a8b4;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .contact-info-grid {
+        grid-template-columns: 1fr 1fr;
+        /* 2x2 grid */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-legal {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+}

@@ -1,0 +1,124 @@
+.about-section {
+    background-color: #fdfdfb;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sub-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #bfa85a;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.sub-heading::before,
+.sub-heading::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #bfa85a;
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.main-heading span {
+    color: #bfa85a;
+}
+
+.about-text {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.stat-item {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+}
+
+.stat-icon {
+    background-color: #f6c700;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon svg {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.stat-item p {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 15px;
+    }
+
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .stats-container {
+        gap: 20px;
+    }
+
+    .stat-item {
+        flex-basis: calc(50% - 40px);
+    }
+
+    /* --- Yeh Naya Code Yahan Add Karein --- */
+    .about-text {
+        text-align: left;
+        /* Text ko left se shuru karega */
+        font-size: 0.95rem;
+        /* Font size thoda chhota kar dega */
+        line-height: 1.7;
+        padding: 13px;
+        /* Line ke beech ki space kam kar dega */
+    }
+}

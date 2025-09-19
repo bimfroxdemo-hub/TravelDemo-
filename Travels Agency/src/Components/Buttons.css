@@ -1,0 +1,52 @@
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #f6c700;
+  color: #111;
+}
+
+.btn.primary:hover {
+  background-color: #ffdd49;
+  transform: translateY(-3px);
+}
+
+.btn.secondary {
+  border-color: white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: white;
+  color: #111;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 80%;
+    margin: 18px auto 40px auto;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+  }
+}
